@@ -1,21 +1,36 @@
 import express from 'express';
+
+// Importa CORS, que permite que tu frontend pueda llamar a esta API
 import cors from 'cors';
+
+// Importa funciones para leer y escribir archivos desde Node
 import { readFileSync, writeFileSync } from 'fs';
 
+// Crea la aplicación Express
 const app = express();
+
+// Activa CORS para permitir peticiones desde React
 app.use(cors());
 app.use(express.json());
 
+// La ruta del archivo donde guardas los alumnos
 const DB_PATH = './src/data/alumnos.json';
 
+// Es la función que lee el archivo alumnos.json y devuelve el array de alumnos
 function loadData() {
+  // Lee el archivo como texto
   const raw = readFileSync(DB_PATH, 'utf-8');
+
+  // Esto convierte el texto JSON en un objeto y devuelve solo el array "alumnos"
   return JSON.parse(raw).alumnos;
 }
 
+// Es la función que guarda el array de alumnos dentro del archivo alumnos.json
 function saveData(alumnos) {
+  // Convierte el array en JSON y lo escribe en el archivo
   writeFileSync(DB_PATH, JSON.stringify({ alumnos }, null, 2));
 }
+
 
 app.get('/api/alumnos', (req, res) => {
   res.json(loadData());
