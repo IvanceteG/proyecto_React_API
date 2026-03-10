@@ -1,0 +1,99 @@
+@baseUrl = http://localhost:3000
+@contentType = application/json
+
+GET {{baseUrl}}/
+
+###
+
+GET {{baseUrl}}/api/alumnos
+
+###
+
+GET {{baseUrl}}/api/alumnos/1
+
+###
+
+GET {{baseUrl}}/api/alumnos/buscar?q=Juan
+
+###
+
+GET {{baseUrl}}/api/alumnos/promocion/2024
+
+###
+
+POST {{baseUrl}}/api/alumnos
+Content-Type: {{contentType}}
+
+{
+  "nombre": "Juan",
+  "apellidos": "Pérez García",
+  "promocion": "2024",
+  "ciclo": "DAW",
+  "urlImagen": "https://i.pravatar.cc/150?img=1"
+}
+
+###
+
+PUT {{baseUrl}}/api/alumnos/1
+Content-Type: {{contentType}}
+
+{
+  "nombre": "Juan Carlos",
+  "apellidos": "Pérez García",
+  "promocion": "2024",
+  "ciclo": "DAW",
+  "urlImagen": "https://i.pravatar.cc/150?img=2"
+}
+
+###
+
+DELETE {{baseUrl}}/api/alumnos/1
+
+###
+
+POST {{baseUrl}}/api/alumnos
+Content-Type: {{contentType}}
+
+{
+  "nombre": "María",
+  "apellidos": "González López",
+  "promocion": "2023/2024",
+  "ciclo": "SMX",
+  "urlImagen": "https://i.pravatar.cc/150?img=3"
+}
+
+###
+
+POST {{baseUrl}}/api/alumnos
+Content-Type: {{contentType}}
+
+{
+  "nombre": "Carlos",
+  "apellidos": "Martínez Ruiz",
+  "promocion": "2024/2025",
+  "ciclo": "ARI",
+  "urlImagen": "https://i.pravatar.cc/150?img=5"
+}
+
+###
+
+POST {{baseUrl}}/api/alumnos
+Content-Type: {{contentType}}
+
+{
+  "nombre": "Ana",
+  "apellidos": "Sánchez Torres",
+  "promocion": "2023/2024",
+  "ciclo": "IEA",
+  "urlImagen": "https://i.pravatar.cc/150?img=7"
+}
+
+###
+
+GET {{baseUrl}}/api/alumnos/buscar?q=García
+
+###
+
+GET {{baseUrl}}/api/alumnos/promocion/2023
+
+###

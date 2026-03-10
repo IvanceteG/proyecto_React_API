@@ -1,0 +1,68 @@
+{
+  "alumnos": [
+    {
+      "id": 1,
+      "nombre": "Anna",
+      "apellidos": "García López",
+      "promocion": "2024/2025",
+      "ciclo": "DAW",
+      "urlImagen": "https://i.pravatar.cc/150?img=1"
+    },
+    {
+      "id": 2,
+      "nombre": "Marc",
+      "apellidos": "Martínez Puig",
+      "promocion": "2024/2025",
+      "ciclo": "DAW",
+      "urlImagen": "https://i.pravatar.cc/150?img=2"
+    },
+    {
+      "id": 3,
+      "nombre": "Laia",
+      "apellidos": "Fernández Torres",
+      "promocion": "2024/2025",
+      "ciclo": "SMX",
+      "urlImagen": "https://i.pravatar.cc/150?img=3"
+    },
+    {
+      "id": 4,
+      "nombre": "Pau",
+      "apellidos": "Soler Vidal",
+      "promocion": "2023/2024",
+      "ciclo": "ARI",
+      "urlImagen": "https://i.pravatar.cc/150?img=4"
+    },
+    {
+      "id": 5,
+      "nombre": "Marta",
+      "apellidos": "Roca Mas",
+      "promocion": "2023/2024",
+      "ciclo": "DAW",
+      "urlImagen": "https://i.pravatar.cc/150?img=5"
+    },
+    {
+      "id": 6,
+      "nombre": "Jordi",
+      "apellidos": "Camps Sala",
+      "promocion": "2023/2024",
+      "ciclo": "IEA",
+      "urlImagen": "https://i.pravatar.cc/150?img=6"
+    },
+    {
+      "id": 7,
+      "nombre": "Sara",
+      "apellidos": "Pons Oliver",
+      "promocion": "2022/2023",
+      "ciclo": "SMX",
+      "urlImagen": "https://i.pravatar.cc/150?img=7"
+    },
+    {
+      "id": 8,
+      "nombre": "Oriol",
+      "apellidos": "Bosch Nadal",
+      "promocion": "2022/2023",
+      "ciclo": "DAW",
+      "urlImagen": "https://i.pravatar.cc/150?img=8"
+    }
+  ]
+}
